@@ -183,7 +183,7 @@ const CSVParser = {
 
     isValidRow: function (row) {
         const dept = (row["Departamento_corr"] || "").trim();
-        const tipo = (row["Tipo de fenómeno ORIG (GRA/RAF/TOR)"] || "").trim();
+        const tipo = (row["Tipo de fenómeno CORR (GRA/RAF/TOR)"] || "").trim();
         const fecha = (row["Fecha"] || "").trim();
         
         // Aceptar fechas válidas (formato AAAAMMDD) o valores como "Tarde", "Mañana", etc.
